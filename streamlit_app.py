@@ -15,7 +15,7 @@ source_text = st.text_area("Source Text", height=200)
 if st.button("Summarize"):
     # Validate inputs
     if not openai_api_key.strip() or not source_text.strip():
-        st.write(f"Please complete the missing fields.")
+        st.error(f"Please provide the missing fields.")
     else:
         try:
             # Split the source text
@@ -31,6 +31,6 @@ if st.button("Summarize"):
             summary = chain.run(docs)
 
             # Display summary
-            st.write(summary)
+            st.success(summary)
         except Exception as e:
-            st.write(f"An error occurred: {e}")
+            st.error(f"An error occurred: {e}")
