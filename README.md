@@ -1,4 +1,6 @@
 # langchain-text-summarizer
+*Note: This repo has been archived; the code is now being maintained at [langchain-examples](https://github.com/alphasecio/langchain-examples/text-summary).*
+
 A sample Streamlit web application for summarizing text using LangChain and OpenAI.
 
 ![langchain-text-summarizer](./langchain-text-summarizer.png)
